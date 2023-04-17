@@ -1,6 +1,4 @@
-﻿
-
-int Prompt(string message)
+﻿int Prompt(string message)
 {
     Console.Write(message);
     string value = Console.ReadLine();
