@@ -3,6 +3,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "task_3",
+            "request": "launch",
+            "mainClass": "task_3",
+            "projectName": "gb_b16edf1"
+        },
+        {
+            "type": "java",
+            "name": "task_2",
+            "request": "launch",
+            "mainClass": "task_2",
+            "projectName": "gb_b16edf1"
+        },
+        {
+            "type": "java",
+            "name": "task",
+            "request": "launch",
+            "mainClass": "task",
+            "projectName": "gb_b16edf1"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "gb_b16edf1"
+        },
+        {
+            "type": "java",
             "name": "snail",
             "request": "launch",
             "mainClass": "Seminar_1.snail",
