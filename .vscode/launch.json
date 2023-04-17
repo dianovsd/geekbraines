@@ -2,18 +2,41 @@
     "version": "0.2.0",
     "configurations": [
         {
-            // Use IntelliSense to find out which attributes exist for C# debugging
-            // Use hover for the description of the existing attributes
-            // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
+            "type": "java",
+            "name": "snail",
+            "request": "launch",
+            "mainClass": "Seminar_1.snail",
+            "projectName": "gb_b16edf1"
+        },
+        {
+            "type": "java",
+            "name": "work",
+            "request": "launch",
+            "mainClass": "work",
+            "projectName": "gb_b16edf1"
+        },
+        {
+            "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "Java.Seminars.Seminar_1.test",
+            "projectName": "gb_b16edf1"
+        },
+        {
+            "type": "java",
+            "name": "work",
+            "request": "launch",
+            "mainClass": "Java.Seminars.work",
+            "projectName": "gb_b16edf1"
+        },
+        {
             "name": ".NET Core Launch (console)",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            // If you have changed target frameworks, make sure to update the program path.
             "program": "${workspaceFolder}/c#/other/test/bin/Debug/net6.0/test.dll",
             "args": [],
             "cwd": "${workspaceFolder}/c#/other/test",
-            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false
         },
