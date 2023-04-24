@@ -1,15 +1,12 @@
 package Java.Homework.Seminar_2;
+
 public class task {
 
-    // Посчитайте сколько драгоценных камней в куче обычных камней
-    // Пример:
-    // jewels = “aB”, stones = “aaaAbbbB”
-    // Результат в консоль ”a3B1”
     public static void main(String[] args) {
-    
+        System.out.println(findJewelsInStones("aB", "aaaAbbbB"));
     }
     
-    public String findJewelsInStones(String jewels, String stones) {
+    public static String findJewelsInStones(String jewels, String stones) {
         int[] count = new int[58];
         for (char c : stones.toCharArray()) {
             count[c - 'A']++;
@@ -20,4 +17,4 @@ public class task {
         }
         return sb.toString();
     }
-    }
+}

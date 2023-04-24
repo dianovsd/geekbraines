@@ -3,6 +3,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "task_2",
+            "request": "launch",
+            "mainClass": "Java.Homework.Seminar_2.task_2",
+            "projectName": "gb_b16edf1"
+        },
+        {
+            "type": "java",
+            "name": "task",
+            "request": "launch",
+            "mainClass": "Java.Homework.Seminar_2.task",
+            "projectName": "gb_b16edf1"
+        },
+        {
+            "type": "java",
+            "name": "task_1",
+            "request": "launch",
+            "mainClass": "Java.Homework.Seminar_2.task_1",
+            "projectName": "gb_b16edf1"
+        },
+        {
+            "type": "java",
             "name": "task_3",
             "request": "launch",
             "mainClass": "task_3",
