@@ -3,6 +3,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "main",
+            "request": "launch",
+            "mainClass": "Final.main",
+            "projectName": "Java"
+        },
+        {
+            "type": "java",
+            "name": "Notebook",
+            "request": "launch",
+            "mainClass": "Notebook",
+            "projectName": "Java"
+        },
+        {
+            "type": "java",
+            "name": "Laptop",
+            "request": "launch",
+            "mainClass": "Laptop",
+            "projectName": "Java"
+        },
+        {
+            "type": "java",
             "name": "task_2",
             "request": "launch",
             "mainClass": "Java.Homework.Seminar_2.task_2",
