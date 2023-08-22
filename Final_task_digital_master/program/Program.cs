@@ -10,14 +10,26 @@
     }
 }
 
-    static string[] FilterArray(string[] array, int length)
-    {
+static string[] FilterArray(string[] array, int length)
+{
 
-        int count = 0;
-        for (int i = 0; i < array.Length; i++)
+    int count = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= length)
         {
-            if (array[i].Length <= length)
-            {
-                count++;
-            }
+            count++;
         }
+    }
+    string[] newArray = new string[count];
+    int index = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= length)
+        {
+            newArray[index] = array[i];
+            index++;
+        }
+    }
+    return newArray;
+}
