@@ -1,4 +1,4 @@
-package ru.geekbrains.lesson2.sample3;
+package sample3;
 
 public class Human extends BaseHuman implements Runner {
 

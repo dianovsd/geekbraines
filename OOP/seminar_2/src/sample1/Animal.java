@@ -1,4 +1,4 @@
-package ru.geekbrains.lesson2.sample1;
+package sample1;
 
 public abstract class Animal {
 

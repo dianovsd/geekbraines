@@ -1,5 +1,4 @@
-package ru.geekbrains.lesson2.sample3;
-
+package sample3;
 public interface Runner {
 
     int getMaxJump();

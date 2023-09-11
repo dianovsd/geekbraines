@@ -1,4 +1,4 @@
-package ru.geekbrains.lesson2.sample3;
+package sample3;
 
 public class Cat extends BaseCat implements Runner {
 

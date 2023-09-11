@@ -1,8 +1,8 @@
-package ru.geekbrains.lesson2.sample1;
+package sample1;
 
-import ru.geekbrains.lesson2.sample1.Animal;
-import ru.geekbrains.lesson2.sample1.Cat;
-import ru.geekbrains.lesson2.sample1.Dog;
+import sample1.Animal;
+import sample1.Cat;
+import sample1.Dog;
 
 public class Program {
 

@@ -1,4 +1,4 @@
-package ru.geekbrains.lesson2.sample2;
+package sample2;
 
 public interface Animal {
 
