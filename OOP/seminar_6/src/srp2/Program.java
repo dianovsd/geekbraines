@@ -2,15 +2,11 @@ package srp2;
 
 public class Program {
 
-    /**
-     * TODO: Переработать приложение в рамках принципа SRP
-     * @param args
-     */
     public static void main(String[] args) {
+        OrderInput orderInput = new OrderInput();
+        OrderSaver orderSaver = new OrderSaver();
 
-        Order order = new Order();
-        order.inputFromConsole();
-        order.saveToJson();
+        Order order = orderInput.inputFromConsole();
+        orderSaver.saveToJson(order);
     }
-
 }

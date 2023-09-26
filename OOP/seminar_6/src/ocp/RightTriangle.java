@@ -1,4 +1,4 @@
-package ru.geekbrains.lesson6.ocp;
+package ocp;
 
 public class RightTriangle implements Shape{
 
