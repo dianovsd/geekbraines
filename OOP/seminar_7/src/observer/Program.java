@@ -1,5 +1,7 @@
 package observer;
 
+import java.util.ArrayList;
+
 public class Program {
 
     /**
@@ -13,22 +15,29 @@ public class Program {
     public static void main(String[] args) {
 
         Publisher jobAgency = new JobAgency();
-        Company google = new Company("Google", jobAgency, 120000);
-        Company yandex = new Company("Yandex", jobAgency, 95000);
-        Company geekBrains = new Company("GeekBrains", jobAgency, 98000);
+        Company google = new Company("Google", jobAgency, 120000, Position.Frontend);
+        Company yandex = new Company("Yandex", jobAgency, 95000,Position.Cleaning);
+        Company geekBrains = new Company("GeekBrains", jobAgency, 98000,Position.HR);
+        Company facebook = new Company("Facebook", jobAgency, 50000,Position.Backend);
 
-        Student student1 = new Student("Petrov");
-        Master master1 = new Master("Ivanov");
-        Master master2 = new Master("Sidorov");
+        Student student1 = new Student("Petrov", Position.Frontend);
+        Master master1 = new Master("Ivanov", Position.HR);
+        Student student2 = new Student("Dianov", Position.Manager);
+        Middle middle1 = new Middle("Kosolapov", Position.Backend);
+
+
 
         jobAgency.registerObserver(student1);
         jobAgency.registerObserver(master1);
-        jobAgency.registerObserver(master2);
+        jobAgency.registerObserver(student2);
+        jobAgency.registerObserver(middle1);
 
-        for (int i = 0; i < 3; i++){
+
+        for (int i = 0; i < 1; i++){
             google.needEmployee();
             yandex.needEmployee();
             geekBrains.needEmployee();
+            facebook.needEmployee();
         }
 
     }

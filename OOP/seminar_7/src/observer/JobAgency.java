@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class JobAgency implements Publisher {
-
+    private Position position;
     List<Observer> observers = new ArrayList<>();
 
     @Override
-    public void sendOffer(String companyName, int salary) {
+    public void sendOffer(String companyName, int salary, Position position) {
         for (Observer observer : observers){
-            observer.receiveOffer(companyName, salary);
+            observer.receiveOffer(companyName, salary, position);
         }
     }
 
