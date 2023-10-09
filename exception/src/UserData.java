@@ -1,5 +1,3 @@
-import java.io.FileWriter;
-import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -8,7 +6,7 @@ import java.util.Scanner;
 public class UserData {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите данные пользователя в формате: Фамилия Имя Отчество дата рождения номер телефона пол");
+        System.out.println("Введите данные пользователя в формате: Фамилия Имя Отчество датарождения номертелефона пол");
         String input = scanner.nextLine();
         String[] userData = input.split(" ");
         if (userData.length != 6) {
@@ -40,14 +38,7 @@ public class UserData {
             throw new IllegalArgumentException("Пол введен неверно");
         }
 
-        String fileName = lastName + ".txt";
-        try (FileWriter writer = new FileWriter(fileName)) {
-            writer.write(lastName + "," + firstName + "," + middleName + "," + dateOfBirthString + "," + phoneNumberString + "," + genderString);
-            writer.write(System.lineSeparator());
-            System.out.println("Данные успешно записаны в файл " + fileName);
-        } catch (IOException e) {
-            e.printStackTrace();
-            System.out.println("Ошибка записи в файл");
-        }
+        UserDataWriter writer = new UserDataWriter(lastName + ".txt");
+        writer.writeUserData(lastName, firstName, middleName, dateOfBirthString, phoneNumberString, genderString);
     }
 }
