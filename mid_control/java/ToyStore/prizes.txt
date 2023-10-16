@@ -1,15 +1,20 @@
-Prize Toy: Car
-Prize Toy: Teddy Bear
-Prize Toy: Car
-Prize Toy: Car
-Prize Toy: Car
-Prize Toy: Car
-Prize Toy: Car
-Prize Toy: Car
-Prize Toy: Teddy Bear
-Prize Toy: Car
-Prize Toy: Car
+Розыгрыш #1
 Prize Toy: Doll
+Розыгрыш #2
 Prize Toy: Car
+Розыгрыш #3
 Prize Toy: Doll
+Розыгрыш #4
+Prize Toy: Car
+Розыгрыш #5
 Prize Toy: Teddy Bear
+Розыгрыш #1
+Prize Toy: Teddy Bear
+Розыгрыш #2
+Prize Toy: Teddy Bear
+Розыгрыш #3
+Prize Toy: Car
+Розыгрыш #4
+Prize Toy: Doll
+Розыгрыш #5
+Prize Toy: Car
